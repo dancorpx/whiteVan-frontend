@@ -1,6 +1,6 @@
 module.exports = {
   items: [{
-    id: 1
+    id: 1,
     name: "Motorbike",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, voluptatibus.",
     category: "vehicle",
@@ -9,7 +9,7 @@ module.exports = {
     quantity: 1,
   },
   {
-    id: 2
+    id: 2,
     name: "Shoes",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, voluptatibus.",
     category: "Clothing",
@@ -18,7 +18,7 @@ module.exports = {
     quantity: 5,
   },
   {
-    id: 3
+    id: 3,
     "name": "Old dirty tools",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, voluptatibus.",
     "category": "Construction",
@@ -27,7 +27,7 @@ module.exports = {
     "quantity": 15,
   },
   {
-    id: 4
+    id: 4,
     name: "Iphone X",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, voluptatibus.",
     category: "Electronics",
@@ -36,7 +36,7 @@ module.exports = {
     quantity: 2,
   },
   {
-    id: 5
+    id: 5,
     name: "Necklace",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, voluptatibus.",
     category: "Jewelry",
