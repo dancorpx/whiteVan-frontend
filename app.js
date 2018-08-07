@@ -4,11 +4,11 @@ App({
     const host = 'http://localhost:3000/api/v1/'
     console.log(111,'processing to login')
     wx.login({
-      success: (res) => {
+      success: (res) => { 
         console.log(222,res)
-      wx.request({
+      wx.request({ 
         url: host + 'login',
-        method: 'post',
+        method: 'post', 
         data: { 
           code: res.code
         },
