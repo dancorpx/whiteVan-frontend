@@ -1,0 +1,13 @@
+<!--pages/landing/landing.wxml-->
+<!-- Banner component -->
+
+<view class="banner">
+  <view class="banner-content">
+  <view ><image src="../../lib/images/white-van-edit.jpg" class="img"></image></view>
+    <view class='title'>White Van Market</view>
+    <text class='teaser'>Cause your shonky</text>
+    <view class='margin'/>
+    <button bindtap="goNext">Enter</button>
+  </view>
+</view>
+<!-- Banner component -->

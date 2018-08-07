@@ -31,16 +31,18 @@
 .card-outer-border {
   margin: 10px;
   border: 0.5px solid rgb(145, 145, 145);
-  border-radius: 10px;
+  border-radius: 5px;
+  padding-bottom: 5px;
 }
 
 .card-header-item {
-  background-color: rgb(120, 172, 193);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  background-color: rgb(145, 145, 145);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   padding: 5px;
   color: white;
   font-size: 14px;
+  text-align: center;
 }
 
 .card-line {
@@ -51,7 +53,13 @@
   padding: 15px;
   color: rgb(73, 73, 73);
   font-size: 16px;
-  text-align: center;
+}
+
+.name {
+  float: left;
+  }
+.price {
+  float: right;
 }
 
 /* Card Component */
