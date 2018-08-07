@@ -1,7 +1,7 @@
 <!--index.wxml-->
 
 <!-- Banner -->
-<view class="banner" style="background-color:lightgray">
+<view class="banner" style="">
     <view class="banner-content">
       <view class='title'>White Van Market</view>
       <text class='teaser'>Sell your suspiciously obtained items</text>
@@ -14,11 +14,12 @@
       <!-- Card component -->
     <view class="card-outer-border">
       <view class="card-header-item">
-          {{item.id}}
+          {{item.category}}
       </view>
       <view class="card-line"/>
       <view class="card-body-item">
-        "{{item.text}}"
+        {{item.name}}
+        {{item.price}}RMB
       </view>
     </view>
       <!-- Card component -->
