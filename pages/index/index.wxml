@@ -1,13 +1,26 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+
+<!-- Banner -->
+<view class="banner" style="">
+    <view class="banner-content">
+      <view class='title'>White Van Market</view>
+      <text class='teaser'>Sell your suspiciously obtained items</text>
+      
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<!-- Banner -->
+
+  <block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
+      <!-- Card component -->
+    <view class="card-outer-border">
+      <view class="card-header-item">
+          {{item.category}}
+      </view>
+      <view class="card-line"/>
+      <view class="card-body-item">
+        {{item.name}}
+        {{item.price}}RMB
+      </view>
+    </view>
+      <!-- Card component -->
+</block>
