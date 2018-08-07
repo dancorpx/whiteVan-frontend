@@ -4,8 +4,7 @@
 <view class="banner" style="">
     <view class="banner-content">
       <view class='title'>White Van Market</view>
-      <text class='teaser'>Sell your suspiciously obtained items</text>
-      
+     <text class='teaser'>Sell your suspiciously obtained items</text>
     </view>
   </view>
 <!-- Banner -->
@@ -18,8 +17,7 @@
       </view>
       <view class="card-line"/>
       <view class="card-body-item">
-        {{item.name}}
-        {{item.price}}RMB
+        <view class="name">{{item.name}}</view><view class="price">{{item.price}}RMB</view>
       </view>
     </view>
       <!-- Card component -->
