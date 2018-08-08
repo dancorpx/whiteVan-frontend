@@ -7,7 +7,7 @@
     <view class='title'>White Van Market</view>
     <text class='teaser'>Cause your shonky</text>
     <view class='margin'/>
-    <button bindtap="goNext">Enter</button>
+    <button class="enter-button" bindtap="goNext">Enter</button>
   </view>
 </view>
 <!-- Banner component -->

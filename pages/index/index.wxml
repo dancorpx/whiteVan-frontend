@@ -8,7 +8,7 @@
     </view>
   </view>
 <!-- Banner -->
-<view style='padding-top: 100px;'></view>
+<view style='padding-top: 110px;'></view>
 <view>
   <block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
       <!-- Card component -->
