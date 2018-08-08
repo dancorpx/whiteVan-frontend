@@ -1,12 +1,18 @@
 // pages/posts/post.js
-Page({
+const app = getApp()
+const category = []
 
+
+Page({
   /**
    * 页面的初始数据
    */
   data: {
+    category: ["vehicle", "clothing", "construction", "electronics", "jewelry"]
   
   },
+
+// Bind Submit
 
   /**
    * 生命周期函数--监听页面加载
