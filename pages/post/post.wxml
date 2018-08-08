@@ -7,7 +7,9 @@
     </view>
   </view>
 <!-- Banner --> 
-<view style='padding-top: 110px;'></view>
+<view style='padding-top: 50px;'></view>
+<view class="container">
+  <view class="heading">Post a new item</view>
 <!-- form card-->
 <form bindsubmit="bindSubmit">
   <view class="user-input">
@@ -18,20 +20,19 @@
 
   <view class="user-input">
     <view class="text-area-wrap">
-      <textarea style="input-size" placeholder='price' class="input-height" name="content" maxlength='-1' />
+      <textarea style="input-size" placeholder='Price' class="input-height" name="content" maxlength='-1' />
     </view>
   </view>
     <view class="user-input">
     <view class="text-area-wrap">
-      <textarea style="input-size" placeholder='quantity' class="input-height" name="content" maxlength='-1' />
+      <textarea style="input-size" placeholder='Quantity' class="input-height" name="content" maxlength='-1' />
     </view>
   </view>
     <view class="user-input">
     <view class="text-area-wrap">
-      <textarea style="input-size" placeholder='description' class="input-height" name="content" maxlength='-1' />
+      <textarea style="input-size" placeholder='Description' class="input-height" name="content" maxlength='-1' />
     </view>
   </view>
-  <view>Category</view>
   <view>
     <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange">
     <picker-view-column>
@@ -41,4 +42,4 @@
 </view>
   <button class="submit-button" form-type="submit" >Sell me shit</button>
 </form>
-
+</view>
