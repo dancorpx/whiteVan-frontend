@@ -1,12 +1,45 @@
 {
   "pages": [
     "pages/landing/landing",
-    "pages/index/index"
-    ],
+    "pages/index/index",
+    "pages/post/post",
+    "pages/exchange/exchange"
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFE",
+    "border Style": "#D3D3D3",
+    "selectedColor": "#D03232",
+    "color": "#888888",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home",
+        "iconPath": "/common/assets/icons/home-unselect.png",
+        "selectedIconPath": "/common/assets/icons/home-select.png"
+      },
+      {
+        "pagePath": "pages/post/post",
+        "text": "Flog some gear",
+        "iconPath": "/common/assets/icons/plus.png",
+        "selectedIconPath": "/common/assets/icons/plus-1.png"
+      },
+      {
+        "pagePath": "pages/exchange/exchange",
+        "text": "My sketchy dealings",
+        "iconPath": "/common/assets/icons/favorite-2.png",
+        "selectedIconPath": "/common/assets/icons/favorite.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }

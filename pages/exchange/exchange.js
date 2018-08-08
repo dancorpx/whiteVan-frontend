@@ -1,4 +1,4 @@
-// pages/landing/landing.js
+// pages/exchange/exchange.js
 Page({
 
   /**
@@ -6,14 +6,6 @@ Page({
    */
   data: {
   
-  },
-
-  goNext: function () {
-    wx.reLaunch({
-      url: '/pages/index/index',
-    })
-
-    
   },
 
   /**
