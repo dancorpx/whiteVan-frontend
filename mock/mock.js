@@ -43,6 +43,42 @@ module.exports = {
     price: 30,
     seller_id: 2,
     quantity: 1,
+  },
+   {
+      id: 5,
+      name: "Necklace",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, voluptatibus.",
+      category: "Jewelry",
+      price: 30,
+      seller_id: 2,
+      quantity: 1,
+    },
+    {
+      id: 5,
+      name: "Necklace",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, voluptatibus.",
+      category: "Jewelry",
+      price: 30,
+      seller_id: 2,
+      quantity: 1,
+    },
+    {
+      id: 5,
+      name: "Necklace",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, voluptatibus.",
+      category: "Jewelry",
+      price: 30,
+      seller_id: 2,
+      quantity: 1,
+    },
+  {
+    id: 6,
+    name: "Shoes",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, voluptatibus.",
+    category: "Clothing",
+    price: 300,
+    seller_id: 2,
+    quantity: 5,
   }
   ]
 }
