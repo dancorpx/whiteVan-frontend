@@ -1,14 +1,15 @@
 <!--index.wxml-->
 
 <!-- Banner -->
-<view class="banner" style="">
+  <view class="banner" style="">
     <view class="banner-content">
       <view class='title'>White Van Market</view>
      <text class='teaser'>Sell your suspiciously obtained items</text>
     </view>
   </view>
 <!-- Banner -->
-
+<view style='padding-top: 100px;'></view>
+<view>
   <block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
       <!-- Card component -->
     <view class="card-outer-border">
@@ -22,3 +23,6 @@
     </view>
       <!-- Card component -->
 </block>
+
+</view>
+
