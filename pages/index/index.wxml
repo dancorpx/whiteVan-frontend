@@ -39,8 +39,9 @@
  </view>
 </view>
 <!-- Banner -->
-<view style='padding-top: 100px;'>
-<view class='cards' animation="{{animation}}" bindtap='onclick'>
+<view class='cards' bindtap='onclick'>
+<view style='padding-top: 130px;'></view>
+<view>
   <block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
     <view>
       <!-- Card component -->

@@ -3,7 +3,8 @@
     "pages/landing/landing",
     "pages/index/index",
     "pages/post/post",
-    "pages/exchange/exchange"
+    "pages/exchange/exchange",
+    "pages/my_items_to_sell/my_items_to_sell"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -31,9 +32,15 @@
       },
       {
         "pagePath": "pages/exchange/exchange",
-        "text": "My sketchy dealings",
+        "text": "My buys",
         "iconPath": "/common/assets/icons/favorite-2.png",
         "selectedIconPath": "/common/assets/icons/favorite.png"
+      },
+      {
+        "pagePath": "pages/my_items_to_sell/my_items_to_sell",
+        "text": "My listed items",
+        "iconPath": "/common/assets/icons/favorite-5.png",
+        "selectedIconPath": "/common/assets/icons/favorite-7.png"
       }
     ]
   },

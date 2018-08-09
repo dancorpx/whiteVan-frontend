@@ -31,3 +31,9 @@
   padding-bottom: 25px; 
 }
 /* Banner Component */
+.enter-button {
+         background-color: rgb(122, 128, 131);
+       color: white;
+       margin: 20px;
+}
+
