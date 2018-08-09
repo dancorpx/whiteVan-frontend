@@ -14,23 +14,23 @@
 <form bindsubmit="bindSubmit">
   <view class="user-input">
     <view class="text-area-wrap">
-      <textarea placeholder="Name" value="{{userInfo.nickname}}" name="name" auto-height />
+      <textarea placeholder="Name"  name="name" auto-height />
     </view>
   </view>
 
   <view class="user-input">
     <view class="text-area-wrap">
-      <textarea style="input-size" placeholder='Price' class="input-height" name="content" maxlength='-1' />
+      <textarea style="input-size" placeholder='Price' class="input-height" name="price" maxlength='-1' />
     </view>
   </view>
     <view class="user-input">
     <view class="text-area-wrap">
-      <textarea style="input-size" placeholder='Quantity' class="input-height" name="content" maxlength='-1' />
+      <textarea style="input-size" placeholder='Quantity' class="input-height" name="quantity" maxlength='-1' />
     </view>
   </view>
     <view class="user-input">
     <view class="text-area-wrap">
-      <textarea style="input-size" placeholder='Description' class="input-height" name="content" maxlength='-1' />
+      <textarea style="input-size" placeholder='Description' class="input-height" name="description" maxlength='-1' />
     </view>
   </view>
   <view>
