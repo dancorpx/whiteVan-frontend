@@ -1,19 +1,23 @@
 // pages/landing/landing.js
+const app = getApp();
+const globalData = app.globalData;
+const myRequest = require('../../lib/api/request');
 
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-    expanded:false
-  },
+  data: { },
 
   goNext: function () {
-    wx.reLaunch({
-      url: '/pages/index/index',
-    })
-
+    console.log(9090, globalData)
+    if (globalData.userThiefId === null) {
+      console.log(101,"")
+      wx.reLaunch({
+        url: '/pages/login/login',
+      })
+    } else {
+      wx.reLaunch({
+        url: '/pages/index/index',
+      })
+    }
     
   },
 

@@ -4,29 +4,25 @@
 <view>
 <view wx:if="{{showPopup}}" bindtap="closePopup" class='whole-page'>
   <view>
-    <view class='expanded-card'>
-    <view class='card-outer-border'>
-      <view class='card-header-items'>
+    <view>
+    <view class='card-outer-border set-background-color'>
+      <view class='card-header-item'>
         {{name}}
       </view>
-      <view class="card-line"/>
-      <view class="card-body-item">
-        <view>
-          {{price}}
-        </view>
-        <view class="card-line"/>
+      <view class="expanded-card-body-item left">
         <view>
           {{description}}
         </view>
-        <view class="card-line"/>
+        <view style='padding-top:10px'></view>
         <view>
-          {{quatity}}
+          <view class='red'>
+            ￥{{price}}
+          </view>
+          <view style='padding-top:10px'>Seller:{{seller_id}}</view>
         </view>
-        <view class="card-line"/>
-        <view>
-          {{seller_id}}
+        <view style='padding-top:15px' class='relative-position'>
+          <button class="position weui-btn mini-btn" type="primary" size="mini" bindtap='purchase'>buy</button>
         </view>
-          <button class="weui-btn mini-btn right" type="primary" size="mini">buy</button>
       </view>
     </view>
   </view>

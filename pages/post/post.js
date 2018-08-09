@@ -9,7 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    category: ["Choose a Category", "Vehicle", "Clothing", "Construction", "Electronics", "Jewelry"],
+    category: ["CHOOSE A CATEGORY", "Vehicle", "Clothing", "Construction", "Electronics", "Jewelry"],
     catChoice: null
   }, 
 
@@ -20,7 +20,6 @@ Page({
       catChoice: this.data.category[val]
     })
     console.log(11111, this.data.catChoice)
-
   },
 // Bind Submit
 
