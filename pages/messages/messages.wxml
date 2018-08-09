@@ -1,2 +1,10 @@
 <!--pages/messages/messages.wxml-->
-<text>pages/messages/messages.wxml</text>
+<!-- Banner -->
+  <view class="banner" style="">
+    <view class="banner-content">
+      <view class='title'>White Van Market</view>
+     <text class='teaser'>Sell your suspiciously obtained items</text>
+    </view>
+  </view>
+<!-- Banner -->
+<view style='padding-top: 130px;'></view>
