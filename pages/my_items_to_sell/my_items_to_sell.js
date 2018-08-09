@@ -1,4 +1,4 @@
-// pages/exchange/exchange.js
+// pages/my_items_to_sell/my_items_to_sell.js
 const app = getApp()
 const mock = require('../../mock/mock.js')
 Page({

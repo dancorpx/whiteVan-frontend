@@ -1,4 +1,4 @@
-<!--pages/exchange/exchange.wxml-->
+<!--pages/my_items_to_sell/my_items_to_sell.wxml-->
 <!-- Banner -->
   <view class="banner" style="">
     <view class="banner-content">
