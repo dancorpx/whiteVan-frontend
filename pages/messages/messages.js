@@ -1,6 +1,4 @@
-// pages/exchange/exchange.js
-const app = getApp()
-const mock = require('../../mock/mock.js')
+// pages/messages/messages.js
 Page({
 
   /**
@@ -9,18 +7,12 @@ Page({
   data: {
   
   },
-  goNext: function () {
-    wx.navigateTo({
-      url: '/pages/messages/messages',
-    })
-  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(mock)
-    this.setData({ items: mock.items })
+  
   },
 
   /**

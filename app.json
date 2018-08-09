@@ -5,7 +5,8 @@
     "pages/index/index",
     "pages/post/post",
     "pages/exchange/exchange",
-    "pages/my_items_to_sell/my_items_to_sell"
+    "pages/my_items_to_sell/my_items_to_sell",
+    "pages/messages/messages"
   ],
   "window": {
     "backgroundTextStyle": "light",
