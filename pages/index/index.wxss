@@ -61,6 +61,18 @@
   font-size: 16px;
 }
 
+.set-background-color {
+  background-color: rgb(145, 145, 145)
+}
+
+.expanded-card-body-item {
+  padding: 20px;
+  color: white;
+  background-color: rgb(73, 73, 73);
+  border-radius: 5px
+}
+
+
 .left {
   float: left;
   }
@@ -69,9 +81,6 @@
 }
 
 /* Card Component */
-
-.expanded-card {
-}
 
 .cards {
   background-size: cover !important; 
@@ -102,4 +111,8 @@
 
 .mini-btn{
     margin-right: 5px;
+}
+
+.red {
+  color: red
 }
