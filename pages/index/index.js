@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+const globalData = app.globalData
 const animationShowHeight = 130;
 //extra height after expanding
 const fadedOpacity = 0.05;
@@ -21,7 +22,14 @@ Page({
       path: 'items',
       success(res) {
         console.log(3333,res)
-        page.setData({items : res.data.items})
+        let itemArray = []
+        res.data.items.forEach(function(item){
+          item.sellerName = item.seller.username
+           itemArray.push(item)
+        })
+        console.log(343434,itemArray)
+        page.setData({items : itemArray})
+        console.log(44444, page.data)
       }
     })
     
@@ -72,25 +80,42 @@ Page({
   },
 
   expandCard: function (e) {
-    // console.log(e.currentTarget.dataset.category)
+    console.log(565656, e)
+    this.setData({ id: e.currentTarget.dataset.id })
     this.setData({ category: e.currentTarget.dataset.category})
     this.setData({ name: e.currentTarget.dataset.name })
     this.setData({ description: e.currentTarget.dataset.description })
     this.setData({ price: e.currentTarget.dataset.price })
     this.setData({ quantity: e.currentTarget.dataset.quantity })
-    this.setData({ seller_id: e.currentTarget.dataset.seller_id })
+    this.setData({ seller_id: e.currentTarget.dataset.sellername })
   },
 
-  purchase: function () {
-      wx.showModal({
-        content: "successfully added to cart",
-        showCancel: false,
-        success: function (res) {
-          if (res.confirm) {
-            console.log('确定')
-          }
+  purchase: function (e) {
+    let page = this
+    console.log(666, e)
+    myRequest.post({
+      path: 'exchanges',
+      data: {
+        exchange: {
+         buyer_id: globalData.userId,
+         sold: false,
+         item_id: e.currentTarget.dataset.hi
         }
-      });
+      },
+      success(res) {
+        console.log(7777, res)
+        wx.showModal({
+          content: "successfully added to cart",
+          showCancel: false,
+          success: function (res) {
+            if (res.confirm) {
+              console.log('Confirm')
+            }
+          }
+        })
+      }
+    })
+  
     }
 })
 
