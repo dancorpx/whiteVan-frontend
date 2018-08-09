@@ -10,13 +10,29 @@
 <view style='padding-top: 130px;'></view>
 
 <!-- messages -->
-<view class="container">
-  <view><image src="../../common/assets/images/callum-avatar.jpeg" class="avatar"></image></view>
-  <view>Hello. How are you today?</view>
-  <view class="time-right">11:00</view>
-</view>
-<view class="darker">
-  <view><image src="../../common/assets/images/jason-avatar.jpeg" class="avatar"></image></view>
-  <view>Hey! I'm fine. Thanks for asking!</view>
-  <view class="time-left">11:01</view>
-</view>
+
+  <view class="lighter">
+    <view><image src="../../common/assets/images/callum-avatar.jpeg" class="avatar"></image></view>
+    <view class="sent_message">Hello. How are you today?</view>
+    <view class="time">11:00</view>
+  </view>
+  <view class="darker">
+    <view><image src="../../common/assets/images/jason-avatar.jpeg" class="avatar"></image></view>
+    <view class="sent_message">Hey! I'm fine. Thanks for asking!</view>
+    <view class="time">11:01</view>
+  </view>
+  <view class="lighter">
+    <view><image src="../../common/assets/images/callum-avatar.jpeg" class="avatar"></image></view>
+    <view class="sent_message">Stolen anything today?</view>
+    <view class="time">11:02</view>
+  </view>
+
+  
+  <view class="container">
+    <form bindsubmit="bindSubmit">
+      <view class="user-input">
+        <textarea style="input-size" placeholder='Type a message' class="input-height" name="content" maxlength='-1' />
+      </view>
+      <button class="submit-button" form-type="submit" >Send</button>
+    </form>
+  </view>
