@@ -67,5 +67,9 @@
 .price {
   float: right;
 }
-
+.img {
+  height: 30px;
+  width: 30px;
+  padding-left: 60px;
+}
 /* Card Component */

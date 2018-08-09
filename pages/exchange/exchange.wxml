@@ -16,8 +16,14 @@
           {{item.category}}
       </view>
       <view class="card-line"/>
-      <view class="card-body-item">
-        <view class="name">{{item.name}}</view><view class="price">{{item.price}}RMB</view>
+        <view class="card-body-item">
+          <view class="name">{{item.name}}</view>
+          <view class="price">{{item.price}}RMB</view>
+          <view>
+            <view bindtap="goNext">
+              <image src="../../common/assets/icons/speech-bubble-oval.png" class="img"></image>
+            </view>
+        </view>
       </view>
     </view>
       <!-- Card component -->

@@ -26,7 +26,7 @@
   margin-top: 20px;
 }
 .img {
-  width: 120px;
+  width: 140px;
   height: 100px;
   padding-bottom: 25px; 
 }
