@@ -1,14 +1,32 @@
 // pages/exchange/exchange.js
 const app = getApp()
-const mock = require('../../mock/mock.js')
+const globalData = app.globalData
+const myRequest = require('../../lib/api/request')
+// const mock = require('../../mock/mock.js')
 Page({
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-  
+  data: {},
+
+  onLoad: function () {
+    let page = this
+    // Fetch Items from API
+    console.log(111, globalData.userId)
+    
+    myRequest.get({
+      path: `exchanges?buyer_id=${globalData.userId}`,
+      success(res) {
+        console.log(7171,res)
+        let itemArray = []
+        res.data.exchanges.forEach(function(exchange){
+          console.log(444, exchange)
+          itemArray.push(exchange.item)
+        })
+        console.log(4343,itemArray)
+        page.setData({ items: itemArray })
+      }
+    })
   },
+
   goNext: function () {
     wx.navigateTo({
       url: '/pages/messages/messages',
@@ -18,10 +36,10 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    console.log(mock)
-    this.setData({ items: mock.items })
-  },
+  // onLoad: function (options) {
+  //   console.log(mock)
+  //   this.setData({ items: mock.items })
+  // },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

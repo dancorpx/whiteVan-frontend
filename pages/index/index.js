@@ -20,7 +20,7 @@ Page({
     myRequest.get({
       path: 'items',
       success(res) {
-        console.log(res)
+        console.log(3333,res)
         page.setData({items : res.data.items})
       }
     })
