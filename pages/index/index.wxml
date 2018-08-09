@@ -21,7 +21,7 @@
           <view style='padding-top:10px'>Seller:{{seller_id}}</view>
         </view>
         <view style='padding-top:15px' class='relative-position'>
-          <button class="position weui-btn mini-btn" type="primary" size="mini">buy</button>
+          <button class="position weui-btn mini-btn" type="primary" size="mini" bindtap='purchase'>buy</button>
         </view>
       </view>
     </view>
