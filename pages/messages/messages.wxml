@@ -8,3 +8,15 @@
   </view>
 <!-- Banner -->
 <view style='padding-top: 130px;'></view>
+
+<!-- messages -->
+<view class="container">
+  <view><image src="../../common/assets/images/callum-avatar.jpeg" class="avatar"></image></view>
+  <view>Hello. How are you today?</view>
+  <view class="time-right">11:00</view>
+</view>
+<view class="darker">
+  <view><image src="../../common/assets/images/jason-avatar.jpeg" class="avatar"></image></view>
+  <view>Hey! I'm fine. Thanks for asking!</view>
+  <view class="time-left">11:01</view>
+</view>
