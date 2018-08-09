@@ -64,16 +64,27 @@
 }
 
 .name {
-  float: left;
-  
-  }
+  flex: 2;
+}
+
 .price {
-  float: right;
-  
+  flex: 2;
+}
+
+button {
+  flex: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background-color: transparent;
+  justify-content: space-around;
+  border: 1px solid snow;
+  outline: none;
+  overflow: hidden;
+  box-shadow: 0px;
 }
 .icon {
   width: 30px;
   height: 30px;
-  
-}
+  }
 /* Card Component */

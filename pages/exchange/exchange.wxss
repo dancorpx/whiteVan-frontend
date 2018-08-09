@@ -59,17 +59,36 @@
   padding: 20px;
   color: rgb(73, 73, 73);
   font-size: 16px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .name {
-  float: left;
+  flex: 2;
   }
 .price {
-  float: right;
+  flex: 2;
 }
 .img {
   height: 30px;
   width: 30px;
   padding-left: 60px;
 }
+
+button {
+  flex: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background-color: transparent;
+  justify-content: space-around;
+  border: 1px solid snow;
+  outline: none;
+  overflow: hidden;
+  box-shadow: 0px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  }
 /* Card Component */
