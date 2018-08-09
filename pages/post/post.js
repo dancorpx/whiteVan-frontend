@@ -9,7 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    category: ["Choose a Category", "Vehicle", "Clothing", "Construction", "Electronics", "Jewelry"],
+    category: ["CHOOSE A CATEGORY", "Vehicle", "Clothing", "Construction", "Electronics", "Jewelry"],
     catChoice: null
   }, 
 
