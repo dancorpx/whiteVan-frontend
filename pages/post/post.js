@@ -20,7 +20,6 @@ Page({
       catChoice: this.data.category[val]
     })
     console.log(11111, this.data.catChoice)
-
   },
 // Bind Submit
 

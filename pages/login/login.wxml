@@ -1,0 +1,34 @@
+<!--pages/login/login.wxml-->
+<!-- Banner -->
+  <view class="banner" style="">
+    <view class="banner-content">
+      <view class='title'>White Van Market</view>
+     <text class='teaser'>Sell your suspiciously obtained items</text>
+    </view>
+  </view>
+<!-- Banner --> 
+<view style='padding-top: 50px;'></view>
+<view class="container">
+  <view class="heading">Make an Account</view>
+<!-- form card-->
+<form bindsubmit="bindSubmit">
+  <view class="user-input">
+    <view class="text-area-wrap">
+      <textarea placeholder="User Name"  name="username" auto-height />
+    </view>
+  </view>
+  <view class="user-input">
+    <view class="text-area-wrap">
+      <textarea style="input-size" placeholder='Thief ID' class="input-height" name="thief_id" maxlength='-1' />
+    </view>
+  </view>
+  <view>
+    <picker-view indicator-style="height: 50px;" style="width: 100%; height: 200px;" value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{area}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>
+  <button class="submit-button" form-type="submit" >Log In</button>
+</form>
+</view>

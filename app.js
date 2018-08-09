@@ -15,10 +15,17 @@ App({
         success: (res) => { 
           console.log(333,res)
           this.globalData.userId = res.data.userId
+          this.globalData.userName = res.data.userName
+          this.globalData.userArea = res.data.userArea 
+          this.globalData.userThiefId = res.data.userThiefId 
         }
       })
       }
     })
   }, 
-  globalData: {}  
-})
+  globalData: {
+    userArea: null,
+    userName:null,
+    userThiefId :null
+  }  
+}) 
