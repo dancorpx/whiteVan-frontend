@@ -5,8 +5,8 @@ const animationShowHeight = 130;
 //extra height after expanding
 const fadedOpacity = 0.05;
 
-// const myRequest = require('../../lib/api/request')
-const mock = require('../../mock/mock.js')
+const myRequest = require('../../lib/api/request')
+// const mock = require('../../mock/mock.js')
 
 Page({
   data: {
@@ -15,18 +15,22 @@ Page({
     showPopup: false
   },
   onLoad: function () {
-    // let page = this 
-    console.log(mock)
-    this.setData({ items: mock.items })
+    let page = this 
+    // Fetch Items from API
+    myRequest.get({
+      path: 'items',
+      success(res) {
+        console.log(res)
+        page.setData({items : res.data.items})
+      }
+    })
+    
+    // console.log(mock)
+    // this.setData({ items: mock.items })
+    
     // Fetch Items from GlobalData
 
-    // myRequest.get({
-    //   path: 'stories',
-    //   success(res) {
-    //     console.log(res)
-    //     page.setData({items : res.data.stories})
-    //   }
-    // })
+ 
   },
   closePopup: function() {
     this.setData({showPopup:false})
