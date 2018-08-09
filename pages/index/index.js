@@ -76,6 +76,18 @@ Page({
     this.setData({ quantity: e.currentTarget.dataset.quantity })
     this.setData({ seller_id: e.currentTarget.dataset.seller_id })
   },
+
+  purchase: function () {
+      wx.showModal({
+        content: "successfully added to cart",
+        showCancel: false,
+        success: function (res) {
+          if (res.confirm) {
+            console.log('确定')
+          }
+        }
+      });
+    }
 })
 
 
