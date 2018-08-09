@@ -11,3 +11,4 @@
   </view>
 </view>
 <!-- Banner component -->
+<!-- <button class="collapsible {{expanded ? 'active' : 'inactive'}}" bindtap='change_state'>Open Section 3</button> -->
