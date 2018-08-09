@@ -14,6 +14,7 @@ Page({
     
     myRequest.get({
       path: `exchanges?buyer_id=${globalData.userId}`,
+      // path: 'exchanges?buyer_id=1',
       success(res) {
         console.log(7171,res)
         let itemArray = []
