@@ -1,11 +1,12 @@
 // pages/landing/landing.js
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    expanded:false
   },
 
   goNext: function () {
@@ -24,7 +25,15 @@ Page({
   },
 
   change_state: function() {
-        collapsible.classList.toggle("active");
+    if (this.data.expanded == true) {
+      this.setData({ expanded: false});
+      console.log(this.data.expanded)
+    }
+    else {
+      this.setData({expanded: true });
+      console.log(this.data.expanded)
+    }
+   
   },
 
   /**

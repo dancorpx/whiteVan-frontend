@@ -1,7 +1,7 @@
 <!--pages/landing/landing.wxml-->
 <!-- Banner component -->
 
-<!-- <view class="banner">
+<view class="banner">
   <view class="banner-content">
   <view ><image src="../../lib/images/white-van-edit.jpg" class="img"></image></view>
     <view class='title'>White Van Market</view>
@@ -9,9 +9,6 @@
     <view class='margin'/>
     <button bindtap="goNext">Enter</button>
   </view>
-</view> -->
-<!-- Banner component -->
-<button class="collapsible" bindtap='change_state'>Open Section 3</button>
-<view class="content">
-  <text>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</text>
 </view>
+<!-- Banner component -->
+<!-- <button class="collapsible {{expanded ? 'active' : 'inactive'}}" bindtap='change_state'>Open Section 3</button> -->

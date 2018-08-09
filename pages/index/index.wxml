@@ -1,28 +1,64 @@
 <!--index.wxml-->
 
 <!-- Banner -->
-  <view class="banner" style="">
-    <view class="banner-content">
-      <view class='title'>White Van Market</view>
-     <text class='teaser'>Sell your suspiciously obtained items</text>
-    </view>
-  </view>
-<!-- Banner -->
-<view style='padding-top: 100px;'></view>
 <view>
-  <block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
-      <!-- Card component -->
-    <view class="card-outer-border">
-      <view class="card-header-item">
-          {{item.category}}
+<view wx:if="{{showPopup}}" bindtap="closePopup" class='whole-page'>
+  <view>
+    <view class='expanded-card'>
+    <view class='card-outer-border'>
+      <view class='card-header-items'>
+        {{name}}
       </view>
       <view class="card-line"/>
       <view class="card-body-item">
-        <view class="name">{{item.name}}</view><view class="price">{{item.price}}RMB</view>
+        <view>
+          {{price}}
+        </view>
+        <view class="card-line"/>
+        <view>
+          {{description}}
+        </view>
+        <view class="card-line"/>
+        <view>
+          {{quatity}}
+        </view>
+        <view class="card-line"/>
+        <view>
+          {{seller_id}}
+        </view>
+          <button class="weui-btn mini-btn right" type="primary" size="mini">buy</button>
       </view>
     </view>
-      <!-- Card component -->
-</block>
-
+  </view>
+  </view>
 </view>
+<view class="banner" style="">
+ <view class="banner-content">
+  <view class='title'>White Van Market</view>
+  <text class='teaser'>Sell your suspiciously obtained items</text>
+ </view>
+</view>
+<!-- Banner -->
+<view style='padding-top: 100px;'>
+<view class='cards' animation="{{animation}}" bindtap='onclick'>
+  <block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
+    <view>
+      <!-- Card component -->
+      <view class="card-outer-border" bindtap='expandCard' data-category="{{item.category}}" data-name="{{item.name}}" data-description="{{item.description}}" data-price="{{item.price}}" data-seller_id="{{item.seller_id}}" data-quantity="{{item.quantity}}">
+        <view class="card-header-item">
+          {{item.category}}
+        </view>
+        <view class="card-line"/>
+        <view class="card-body-item">
+          <view class="left">{{item.name}}</view><view class="right">{{item.price}}RMB</view>
+        </view>
+      </view>
+      <!-- Card component -->
+    </view>
+  </block>
+</view>
+</view>
+</view>
+
+
 
