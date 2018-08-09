@@ -22,9 +22,9 @@ Page({
 
   bindDestroy: function (e) {
     let page = this
-    console.log(e.target.dataset.hi)
+    console.log(555,e)
     wx.showToast({ title: 'Deleting...', icon: 'loading', duration: 1000 })
-
+    console.log(e.target)
     // Update story to API
     myRequest.delete({
       path: `items/${e.target.dataset.hi}`,
