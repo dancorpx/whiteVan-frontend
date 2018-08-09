@@ -1,4 +1,4 @@
-/* pages/exchange/exchange.wxss */
+/* pages/my_items_to_sell/my_items_to_sell.wxss */
 /* Banner Component */
 .banner {
     color: white;
