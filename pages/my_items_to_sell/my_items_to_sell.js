@@ -16,6 +16,7 @@ Page({
       path: `items?seller_id=${globalData.userId}`,
       success(res) {
         page.setData({ items: res.data.items })
+        console.log(77777777, page.data.items)
       }
     })
   },
@@ -40,6 +41,27 @@ Page({
       })
     }, 1000)
   },
+
+  goNext: function (e) {
+    console.log(12121, e)
+    let page = this
+
+    myRequest.get({
+      path: `items/${e.currentTarget.dataset.hi}`,
+      success(res) {
+        console.log(3333, res)
+        globalData.currentExchange 
+      }
+    })
+        wx.navigateTo({
+        url: '/pages/messages/messages',
+      })
+   
+  },
+
+
+
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
