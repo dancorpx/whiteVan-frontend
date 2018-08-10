@@ -10,14 +10,14 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#919191",
+    "navigationBarTitleText": "White Van Market",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "backgroundColor": "#FFFFFE",
+    "backgroundColor": "rgb(252, 223, 156)",
     "border Style": "#D3D3D3",
-    "selectedColor": "#D03232",
+    "selectedColor": "rgb(0,0,0)",
     "color": "#888888",
     "list": [
       {

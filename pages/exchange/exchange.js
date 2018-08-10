@@ -12,6 +12,9 @@ Page({
     // Fetch Items from API
     console.log(111, globalData.userId)
     
+
+  
+
     myRequest.get({
       path: `exchanges?buyer_id=${globalData.userId}`,
       // path: 'exchanges?buyer_id=1',
@@ -35,6 +38,8 @@ Page({
       url: '/pages/messages/messages',
     })
   },
+
+
 
   /**
    * 生命周期函数--监听页面加载

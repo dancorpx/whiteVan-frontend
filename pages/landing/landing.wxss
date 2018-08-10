@@ -32,8 +32,12 @@
 }
 /* Banner Component */
 .enter-button {
-         background-color: rgb(122, 128, 131);
+       background-color: rgb(145, 145, 145);
        color: white;
        margin: 20px;
+       border: 2px solid; 
+       border-color:  rgb(255, 153, 51);
+       box-shadow: 0 8px 6px -6px #000000 ;
+       font-weight: bold;
 }
 

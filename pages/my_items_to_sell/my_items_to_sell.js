@@ -16,15 +16,16 @@ Page({
       path: `items?seller_id=${globalData.userId}`,
       success(res) {
         page.setData({ items: res.data.items })
+        console.log(77777777, page.data.items)
       }
     })
   },
 
   bindDestroy: function (e) {
     let page = this
-    console.log(e.target.dataset.hi)
+    console.log(555,e)
     wx.showToast({ title: 'Deleting...', icon: 'loading', duration: 1000 })
-
+    console.log(e.target)
     // Update story to API
     myRequest.delete({
       path: `items/${e.target.dataset.hi}`,
@@ -40,6 +41,27 @@ Page({
       })
     }, 1000)
   },
+
+  goNext: function (e) {
+    console.log(12121, e)
+    let page = this
+
+    myRequest.get({
+      path: `items/${e.currentTarget.dataset.hi}`,
+      success(res) {
+        console.log(3333, res)
+        globalData.currentExchange 
+      }
+    })
+        wx.navigateTo({
+        url: '/pages/messages/messages',
+      })
+   
+  },
+
+
+
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
