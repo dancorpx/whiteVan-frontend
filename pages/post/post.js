@@ -10,7 +10,11 @@ Page({
    */
   data: {
     category: ["CHOOSE A CATEGORY", "Vehicle", "Clothing", "Construction", "Electronics", "Jewelry"],
-    catChoice: null
+    catChoice: null,
+    showWarning: false,
+    name: false,
+    price: false,
+    description: false,
   }, 
 
   bindChange: function (e) {
@@ -32,7 +36,18 @@ Page({
     } else {
 
     let page = this
-
+    if (e.detail.value.name.replace(/\s/g, '').length == 0) {
+      this.warning("name")
+      return
+    }
+    if (e.detail.value.price.replace(/\s/g, '').length == 0) {
+      this.warning("price")
+      return
+    } 
+    if (e.detail.value.description.length <= 40) {
+      this.warning("description")
+      return
+    }
 
     wx.showToast({ title: 'Sending...', icon: 'loading', duration: 1000 })
     console.log(999,page.data)
@@ -117,5 +132,38 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  warning: function (message) {
+    this.setData({showWarning: true})
+    if (message == "name") {
+      this.setData({name: true})
+    }
+    if (message == "price") {
+      this.setData({price: true})
+    }
+    if (message == "description") {
+      this.setData({description: true})
+    }
+  },
+
+  closeWarning: function () {
+    this.setData({showWarning: false})
+    this.setData({ name: false })
+    this.setData({ price: false })
+    this.setData({ description: false })
   }
+
+    // var animation = wx.createAnimation({
+    //  transformOrigin: "50% 50%",
+    //  duration: 500,
+    //  timingFunction: "ease",
+    //  delay: 0
+    // })
+    // this.animation = animation
+    // animation.opacity(0).step()
+    // this.setData({
+    //   animation: animation.export(),
+    // })
+
 })
