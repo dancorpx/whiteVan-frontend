@@ -31,6 +31,27 @@ Page({
     })
   },
 
+  bindDestroy: function (e) {
+    let page = this
+    console.log(555, e)
+    wx.showToast({ title: 'Deleting...', icon: 'loading', duration: 1000 })
+    console.log(e.tar)
+    // Update story to API
+    myRequest.delete({
+      path: `exchanges/${e.currentTarget.dataset.hi}`,
+      data: {},
+      success(res) {
+        console.log(res)
+      }
+    })
+
+    setTimeout(function () {
+      wx.reLaunch({
+        url: '/pages/exchange/exchange'
+      })
+    }, 1000)
+  },
+
   goNext: function (e) {
     console.log(12121, e)
     globalData.currentExchange = e.currentTarget.dataset.hi
