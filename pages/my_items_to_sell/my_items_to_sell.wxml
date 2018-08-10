@@ -1,6 +1,6 @@
 <!--pages/my_items_to_sell/my_items_to_sell.wxml-->
 <!-- Banner -->
-  <view class="banner" style="">
+  <view class="banner">
     <view class="banner-content">
       <view class='title'>White Van Market</view>
      <text class='teaser'>Sell your suspiciously obtained items</text>
@@ -22,10 +22,10 @@
              <!-- <view bindtap="bindDestroy"> -->
                <!-- <image src="../../common/assets/icons/rubbish-bin.png" class="icon"> -->
               <!-- </image> -->
-            <button plain bindtap="goNext" data-hi="{{item.id}}">
+            <button plain bindtap="goNext" data-hi="{{item.id}}" style=' z-index: 1'>
               <image src="../../common/assets/icons/speech-bubble-oval.png" class="img"></image>
             </button>
-            <button plain bindtap="bindDestroy" data-hi="{{item.id}}"><image src="../../common/assets/icons/rubbish-bin.png" class="icon"></image></button>
+            <button plain bindtap="bindDestroy" data-hi="{{item.id}}" style=' z-index: 1'><image src="../../common/assets/icons/rubbish-bin.png" class="icon"></image></button>
             <!-- </view> -->
       </view>
     </view>
