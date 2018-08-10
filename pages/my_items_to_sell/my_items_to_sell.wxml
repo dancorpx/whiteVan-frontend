@@ -16,11 +16,33 @@
           {{item.category}}
       </view>
       <view class="card-line"/>
-      <view class="card-body-item">
-        <view class="name">{{item.name}}</view><view class="price">{{item.price}}RMB</view>
+        <view class="card-body-item">
+          <view class="name">{{item.name}}</view>
+             <view class="price">{{item.price}}RMB</view>
+             <!-- <view bindtap="bindDestroy"> -->
+               <!-- <image src="../../common/assets/icons/rubbish-bin.png" class="icon"> -->
+              <!-- </image> -->
+            <button plain bindtap="goNext" data-hi="{{item.id}}">
+              <image src="../../common/assets/icons/speech-bubble-oval.png" class="img"></image>
+            </button>
+            <button plain bindtap="bindDestroy" data-hi="{{item.id}}"><image src="../../common/assets/icons/rubbish-bin.png" class="icon"></image></button>
+            <!-- </view> -->
       </view>
     </view>
       <!-- Card component -->
 </block>
 
 </view>
+
+<!-- 
+<view cardl>
+       <view card-area z-index 1> 
+
+
+       </view>
+
+       <view button-area  z-index 99  bindtap>
+
+       </view>
+
+</<view> -->
