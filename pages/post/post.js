@@ -24,6 +24,13 @@ Page({
 // Bind Submit
 
   bindSubmit: function (e) {
+    if (globalData.userThiefId === null) {
+      console.log(101, "")
+      wx.reLaunch({
+        url: '/pages/login/login',
+      })
+    } else {
+
     let page = this
 
 
@@ -53,6 +60,7 @@ Page({
         url: '/pages/index/index'
       })
     }, 1000)
+    }
   },
 
   /**

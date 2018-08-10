@@ -28,7 +28,9 @@ Page({
     })
   },
 
-  goNext: function () {
+  goNext: function (e) {
+    console.log(12121, e)
+    globalData.currentExchange = e.currentTarget.dataset.hi
     wx.navigateTo({
       url: '/pages/messages/messages',
     })

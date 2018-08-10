@@ -11,28 +11,22 @@
 
 <!-- messages -->
 
+<block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
   <view class="lighter">
     <view><image src="../../common/assets/images/callum-avatar.jpeg" class="avatar"></image></view>
-    <view class="sent_message">Hello. How are you today?</view>
-    <view class="time">11:00</view>
+    <view class="sent_message">{{item.message}}</view>
+    <view class="sent_message"style="color: red;"> {{item.sender.username}}</view>
+    <view class="time">{{item.time}}</view>
   </view>
-  <view class="darker">
-    <view><image src="../../common/assets/images/jason-avatar.jpeg" class="avatar"></image></view>
-    <view class="sent_message">Hey! I'm fine. Thanks for asking!</view>
-    <view class="time">11:01</view>
-  </view>
-  <view class="lighter">
-    <view><image src="../../common/assets/images/callum-avatar.jpeg" class="avatar"></image></view>
-    <view class="sent_message">Stolen anything today?</view>
-    <view class="time">11:02</view>
-  </view>
+</block>
 
-  
-  <view class="container">
-    <form bindsubmit="bindSubmit">
+
+  <view class="message-form-container">
+    <form bindsubmit="bindMessage">
       <view class="user-input">
-        <textarea style="input-size" placeholder='Type a message' class="input-height" name="content" maxlength='-1' />
+        <input style="input-size" placeholder='Type a message' class="input-height" name="content" maxlength='-1' />
       </view>
       <button class="submit-button" form-type="submit" >Send</button>
     </form>
   </view>
+  <view style='padding-bottom: 130px;'></view>

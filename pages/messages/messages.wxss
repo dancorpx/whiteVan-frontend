@@ -40,6 +40,9 @@
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
+    
+     
+   
 }
 
 /* Darker chat container */
@@ -83,7 +86,7 @@
   color: white;
   margin: 10px;
   width: 200px;
-  margin-left: 60px;
+ 
 }
 /* input field */
 .user-input {
@@ -91,7 +94,22 @@
   background-color: #ddd;
   border-radius: 5px;
   height: 50px;
+  width: 90vw;
 }
-.container {
-
+.message-container {
+  height: 60vh; 
+  overflow:   none;
+  position:   relative;
+}
+.message-form-container {
+   position: fixed;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   bottom: 1px;
+    border-radius: 10px;
+    text-align: center;
+    height: 20vh;
+    width: 100vw;
 }

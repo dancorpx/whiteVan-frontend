@@ -37,9 +37,7 @@
   text-align: left;
 }
 /* page text */
-.picker-view-coulmn {
 
-}
 
 /* Card Component */
 .card-outer-border {

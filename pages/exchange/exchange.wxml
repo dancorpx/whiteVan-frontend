@@ -8,6 +8,7 @@
   </view>
 <!-- Banner -->
 <view style='padding-top: 130px;'></view>
+
 <view>
   <block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
       <!-- Card component -->
@@ -20,10 +21,15 @@
           <view class="name">{{item.name}}</view>
           <view class="price">{{item.price}}RMB</view>
           <view>
-            <view bindtap="goNext">
+            <button plain bindtap="goNext" data-hi="{{item.id}}">
               <image src="../../common/assets/icons/speech-bubble-oval.png" class="img"></image>
-              <button bindtap="bindDestroy" data-hi="{{item.id}}"><image src="../../common/assets/icons/rubbish-bin.png" class="icon"></image></button>
-          </view>
+            </button>
+            <button bindtap="bindDestroy" data-hi="{{item.id}}">
+              <image src="../../common/assets/icons/rubbish-bin.png" class="icon">
+              </image>
+            </button>
+          
+           
         </view>
       </view>
     </view>
