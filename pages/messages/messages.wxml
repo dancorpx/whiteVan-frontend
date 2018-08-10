@@ -15,8 +15,10 @@
   <view class="lighter">
     <view><image src="../../common/assets/images/callum-avatar.jpeg" class="avatar"></image></view>
     <view class="sent_message">{{item.message}}</view>
-    <view class="sent_message"style="color: red;"> {{item.sender.username}}</view>
+    <view class="sent_message"style="color: red;"> {{item.sender.username}}
     <view class="time">{{item.time}}</view>
+    </view>
+    
   </view>
 </block>
 
@@ -26,7 +28,10 @@
       <view class="user-input">
         <input style="input-size" placeholder='Type a message' class="input-height" name="content" maxlength='-1' />
       </view>
+      <view class="button-container">
+       <button class="back-button" bindtap="bindBack" >Back</button>
       <button class="submit-button" form-type="submit" >Send</button>
+      </view>
     </form>
   </view>
   <view style='padding-bottom: 130px;'></view>
