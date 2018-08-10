@@ -8,16 +8,16 @@ Page({
 
   goNext: function () {
     console.log(9090, globalData)
-    if (globalData.userThiefId === null) {
-      console.log(101,"")
-      wx.reLaunch({
-        url: '/pages/login/login',
-      })
-    } else {
+    // if (globalData.userThiefId === null) {
+    //   console.log(101,"")
+    //   wx.reLaunch({
+    //     url: '/pages/login/login',
+    //   })
+    // } else {
       wx.reLaunch({
         url: '/pages/index/index',
       })
-    }
+    // }
     
   },
 

@@ -1,23 +1,51 @@
 // pages/messages/messages.js
+const app = getApp()
+const globalData = app.globalData
+const myRequest = require('../../lib/api/request')
+
 Page({
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-  
-  },
+  data: {},
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-  
+    let page = this
+    // Fetch Items from API
+    myRequest.get({
+      path: `/exchanges/${globalData.currentExchange}/chat_records`,
+      success(res) {
+        console.log(3333, res)
+        page.setData({items: res.data.messages})
+      }
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
+  bindMessage: function (e) {
+    let page = this
+
+    wx.showToast({ title: 'Sending...', icon: 'loading', duration: 1000 })
+    console.log(999, e)
+    console.log(3434, globalData.currentExchange)
+
+    myRequest.post({
+      path: `/exchanges/${globalData.currentExchange}/chat_records`,
+      data: {
+        message: e.detail.value.content,
+        user_id: globalData.userId,
+        exchange_id: globalData.currentExchange
+      },
+      success(res) {
+        console.log(res)
+      }
+    })
+
+    setTimeout(function () {
+      wx.reLaunch({
+        url: '/pages/messages/messages'
+      })
+    }, 1000)
+  },
+
+  
   onReady: function () {
   
   },
