@@ -18,10 +18,10 @@
           <view class='red'>
             ￥{{price}}
           </view>
-          <view style='padding-top:10px'>Seller:{{seller_id}}</view>
+          <view style='padding-top:10px'>Seller:  {{seller_id}}</view>
         </view>
         <view style='padding-top:15px' class='relative-position'>
-          <button class="position weui-btn mini-btn" type="primary" size="mini" bindtap='purchase'>buy</button>
+          <button class="position weui-btn mini-btn" type="primary" size="mini" bindtap='purchase' data-hi="{{id}}">buy</button>
         </view>
       </view>
     </view>
@@ -41,7 +41,7 @@
   <block wx:for="{{items}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="items">
     <view>
       <!-- Card component -->
-      <view class="card-outer-border" bindtap='expandCard' data-category="{{item.category}}" data-name="{{item.name}}" data-description="{{item.description}}" data-price="{{item.price}}" data-seller_id="{{item.seller_id}}" data-quantity="{{item.quantity}}">
+      <view class="card-outer-border" bindtap='expandCard' data-category="{{item.category}}" data-name="{{item.name}}" data-description="{{item.description}}" data-price="{{item.price}}" data-seller_id="{{item.seller_id}}" data-sellerName="{{item.sellerName}}" data-quantity="{{item.quantity}}" data-id="{{item.id}}">
         <view class="card-header-item">
           {{item.category}}
         </view>
