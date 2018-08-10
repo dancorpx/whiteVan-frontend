@@ -22,6 +22,9 @@
              <!-- <view bindtap="bindDestroy"> -->
                <!-- <image src="../../common/assets/icons/rubbish-bin.png" class="icon"> -->
               <!-- </image> -->
+            <button plain bindtap="goNext" data-hi="{{item.id}}">
+              <image src="../../common/assets/icons/speech-bubble-oval.png" class="img"></image>
+            </button>
             <button plain bindtap="bindDestroy" data-hi="{{item.id}}"><image src="../../common/assets/icons/rubbish-bin.png" class="icon"></image></button>
             <!-- </view> -->
       </view>

@@ -89,4 +89,10 @@ button {
   width: 30px;
   height: 30px;
   }
+  .img {
+  flex: 1;
+  height: 30px;
+  width: 30px;
+  padding-left: 0px;
+}
 /* Card Component */
