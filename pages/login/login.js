@@ -22,7 +22,7 @@ Page({
 
   bindSubmit: function (e) {
     let page = this
-    wx.showToast({ title: 'Sending...', icon: 'loading', duration: 1000 })
+    wx.showToast({ title: 'Logging In....', icon: 'loading', duration: 1000 })
     console.log(444, e.detail.value.thief_id)
     console.log(999, page.data)
     console.log(3434, globalData.userId)
@@ -39,14 +39,13 @@ Page({
         console.log(98989,res)
         globalData.userName = res.data.username
         globalData.userArea = res.data.area
-        globalData.userThiefId = res.data.thief_id
-      }
+        globalData.userThiefId = res.data.thief_id 
+      } 
     })
-
     setTimeout(function () {
       wx.reLaunch({
-        url: '/pages/landing/landing'
+        url: '/pages/index/index'
       })
     }, 1000)
   },  
-})
+}) // page end
