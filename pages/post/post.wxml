@@ -52,7 +52,7 @@
     </picker-view-column>
   </picker-view>
 </view>
-  <button class="submit-button" form-type="submit">Sell me shit</button>
+  <button class="submit-button" form-type="submit">Sell my shit</button>
 </form>
 </view>
 </view>

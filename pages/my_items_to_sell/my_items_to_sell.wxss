@@ -37,11 +37,9 @@
 /* Card Component */
 .card-outer-border {
   margin: 10px;
-  border: 0.5px solid rgb(252, 223, 156);
+  border: 0.5px solid rgb(145, 145, 145);
   border-radius: 5px;
   padding-bottom: 5px;
-  border: 2px solid;
-  border-color: rgb(145, 145, 145);
 }
 
 .card-header-item {
@@ -78,21 +76,21 @@
 
 button {
   flex: 1;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: flex;
   background-color: transparent;
   justify-content: space-around;
   border: 0px !important;
 }
 .icon {
+  /* flex: 1; */
   width: 30px;
   height: 30px;
   }
   .img {
-  flex: 1;
+  /* flex: 1; */
   height: 30px;
   width: 30px;
-  padding-left: 0px;
-}
+  }
 /* Card Component */
