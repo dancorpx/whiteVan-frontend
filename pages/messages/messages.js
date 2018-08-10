@@ -19,6 +19,12 @@ Page({
     })
   },
 
+  bindBack: function(){
+    wx.reLaunch({
+      url: '/pages/exchange/exchange',
+    })
+  },
+
   bindMessage: function (e) {
     let page = this
 
