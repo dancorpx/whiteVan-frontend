@@ -11,7 +11,7 @@ const myRequest = require('../../lib/api/request')
 
 Page({
   data: {
-    animation: '',
+    // animation: '',
     expand: false,
     showPopup: false
   },
@@ -91,6 +91,14 @@ Page({
   },
 
   purchase: function (e) {
+
+    if (globalData.userThiefId === null) {
+        console.log(101,"")
+        wx.reLaunch({
+          url: '/pages/login/login',
+        })
+      } else {
+      
     let page = this
     console.log(666, e)
     myRequest.post({
@@ -115,7 +123,7 @@ Page({
         })
       }
     })
-  
+    }
     }
 })
 
