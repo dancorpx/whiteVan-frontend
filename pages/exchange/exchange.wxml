@@ -20,14 +20,14 @@
         <view class="card-body-item">
           <view class="name">{{item.name}}</view>
           <view class="price">{{item.price}}RMB</view>
-          <view>
-            <button plain bindtap="goNext" data-hi="{{item.id}}">
+           <button plain bindtap="goNext" data-hi="{{item.id}}">
               <image src="../../common/assets/icons/speech-bubble-oval.png" class="img"></image>
             </button>
-        </view>
+            <button plain bindtap="bindDestroy" data-hi="{{item.id}}">
+              <image src="../../common/assets/icons/rubbish-bin.png" class="icon"></image>
+            </button>
       </view>
     </view>
       <!-- Card component -->
-</block>
-
+  </block>
 </view>
