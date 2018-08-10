@@ -44,13 +44,15 @@ Page({
 
   goNext: function (e) {
     console.log(12121, e)
+    
     let page = this
+    console.log(1221211222, page.data)
 
     myRequest.get({
       path: `items/${e.currentTarget.dataset.hi}`,
       success(res) {
         console.log(3333, res)
-        globalData.currentExchange 
+        globalData.currentExchange = res.data.exchange.exchange.id
       }
     })
         wx.navigateTo({
