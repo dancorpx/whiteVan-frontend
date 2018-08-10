@@ -22,7 +22,7 @@
              <!-- <view bindtap="bindDestroy"> -->
                <!-- <image src="../../common/assets/icons/rubbish-bin.png" class="icon"> -->
               <!-- </image> -->
-            <button bindtap="bindDestroy" data-hi="{{item.id}}"><image src="../../common/assets/icons/rubbish-bin.png" class="icon"></image></button>
+            <button plain bindtap="bindDestroy" data-hi="{{item.id}}"><image src="../../common/assets/icons/rubbish-bin.png" class="icon"></image></button>
             <!-- </view> -->
       </view>
     </view>
@@ -30,3 +30,16 @@
 </block>
 
 </view>
+
+<!-- 
+<view cardl>
+       <view card-area z-index 1> 
+
+
+       </view>
+
+       <view button-area  z-index 99  bindtap>
+
+       </view>
+
+</<view> -->

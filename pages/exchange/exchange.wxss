@@ -82,10 +82,10 @@ button {
   display: flex;
   background-color: transparent;
   justify-content: space-around;
-  border: 1px solid snow;
-  outline: none;
-  overflow: hidden;
-  box-shadow: 0px;
+  text-decoration: none;
+  outline:none;
+  border: none;
+  box-shadow: none;
 }
 .icon {
   width: 30px;

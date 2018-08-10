@@ -78,10 +78,7 @@ button {
   display: flex;
   background-color: transparent;
   justify-content: space-around;
-  border: 1px solid snow;
-  outline: none;
-  overflow: hidden;
-  box-shadow: 0px;
+  border: 0px !important;
 }
 .icon {
   width: 30px;
